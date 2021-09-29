@@ -2,7 +2,7 @@
 
 ![MIT License](https://img.shields.io/github/license/shine-jayakumar/Covid19-Exploratory-Analysis-With-SQL)
 
-  In this project, we are going to extract data from a pdf file without using PyPDF2/4. 
+  In this project, we are going to batch-convert pdf files to text and extract data without using PyPDF2/4. 
 
   We're going to achieve that by:
   - Using PDFtoText converter from XPdfReader to convert pdf files to text files
