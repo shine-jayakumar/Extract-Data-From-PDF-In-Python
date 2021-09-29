@@ -5,7 +5,7 @@
   In this project, we are going to batch-convert pdf files to text and extract data without using PyPDF2/4. 
 
   We're going to achieve that by:
-  - Using PDFtoText converter from XPdfReader to convert pdf files to text files
+  - Using PDFtoText converter from XPdf to convert pdf files to text files
   - Using regular expressions to extract data
   - Performing data cleaning using pandas
   - Exporting to Excel file
