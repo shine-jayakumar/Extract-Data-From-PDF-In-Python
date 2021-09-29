@@ -7,7 +7,6 @@ from datetime import datetime
 import logging
 
 # Setting up logger
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
@@ -23,9 +22,6 @@ logger.addHandler(file_handler)
 if len(sys.argv) > 1:
     if "--verbose" in sys.argv or "-v" in sys.argv:
         logger.addHandler(stdout_handler)
-
-
-
 
 def convert_pdf_to_text():
     '''
@@ -59,7 +55,6 @@ def convert_pdf_to_text():
         
     err_count = 0
     
-
     # converting files one by one
     logger.info("Generating text files from pdf")
     for fname in list_fnames:
@@ -101,7 +96,6 @@ def get_list_of_converted_files():
     Returns list of full path of converted text files
 
     '''
-    
     list_text_fnames = []
     
     def append_path(fname):
@@ -271,8 +265,7 @@ class Payslip:
         else:
             return ""
 
-
-
+        
 payslip_details = {
     "pay_period": [],
     "pay_date": [],
@@ -293,7 +286,6 @@ logger.info("Converting pdf to text")
 convert_pdf_to_text()
 
 list_txt_fnames = get_list_of_converted_files()
-
 pay = Payslip()
 
 logger.info("Saving payslip details from each text file to dictionary")
